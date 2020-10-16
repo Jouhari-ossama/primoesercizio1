@@ -11,6 +11,11 @@ app.get('/about',function(req,res){
  app.get('/sitemap',function(req,res){
  res.sendFile(path.join(__dirname,'sitemap.html'));
 });
+
+app.get('/api/products',function(req,res){
+ res.sendFile(path.join(__dirname,'dati.json'));
+});
+
 app.listen(3002, function () {
   console.log('Example app listening on port 3002!');
 });
